@@ -11,7 +11,7 @@ number이나 string, boolean이 있다.
 
 하지만 배열은 다르게 설정을 한다.
 
-```jsx
+```tsx
 // 일반적으로 number이나 string, boolean은 밑에 쓴다.
 
 let age:number = 17;
@@ -27,7 +27,7 @@ let a2:Array<number> = [4, 5, 6];
 
 튜플은 배열에서 첫 번째는 number 두 번째는 string을 넣는 것을 해준다.
 
-```jsx
+```tsx
 let a:[number, string];
 
 a = [1, "Hello"];
@@ -39,7 +39,7 @@ a = ["Hello", 1]; // 단, 1이랑 "Hello"를 바꿔서 쓰는 것은 안된다.
 
 void는 함수에서 아무것도 반환하지 않을 때, 사용을 한다.
 
-```jsx
+```tsx
 const func = ():void => {
   console.log('void type');
 }
@@ -54,7 +54,7 @@ function func():void = {
 
 never은 함수가 error을 반환할 때나 혹은 영원히 끝나지 않은 함수의 타입을 나타낼 수도 있다.
 
-```jsx
+```tsx
 // Error을 반환하는 함수
 const showError = ():never => {
   throw new Error();
@@ -73,7 +73,7 @@ const ifLoof = ():never => {
 
 - 비슷한 값들끼리 묶어주었다고 생각을 하면 된다.
 
-```jsx
+```tsx
 enum Os {
   Window, // 0
   ios,    // 1
@@ -91,7 +91,7 @@ console.log([’ios’]);를 하면 위의 코드 기준으로 1이 나오고 [1
 
 또한 값은 숫자가 아닌 문자열로 넣어도 된다.
 
-```jsx
+```tsx
 enum Os {
   Window, // 0
   ios,    // 1
@@ -107,7 +107,7 @@ myOs = Os.window
 
 ## null && undefined
 
-```jsx
+```tsx
 let a:null = null;
 let b:undefined = undefined;
 ```
